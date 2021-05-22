@@ -11,7 +11,7 @@ export const Add = () => {
     setQuery(e.target.value);
 
     fetch(
-      `http://www.omdbapi.com/?s=${e.target.value}&apikey=8e7a1250`
+      `https://www.omdbapi.com/?s=${e.target.value}&apikey=8e7a1250`
     )
       .then((res) => res.json())
       .then((data) => {
